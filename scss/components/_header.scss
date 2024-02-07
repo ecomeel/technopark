@@ -1,0 +1,36 @@
+.header {
+  background-color: #000;
+
+  .logo-wrapper {
+
+  }
+
+  &__container {
+    margin-top: 24px;
+    padding: 12px 20px;
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+  }
+
+  &__open-nav-btn {
+    cursor: pointer;
+  }
+}
+
+.notice {
+  &__wrapper {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(236, 101, 102);
+    text-align: center;
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, 0px 3px 5px #000,
+      0 -1px 1px #000;
+  }
+}

@@ -1,0 +1,82 @@
+.hot-offer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #fff;
+  background-color: #000;
+
+  &__about-item {
+    margin-right: 22px;
+    margin-left: 22px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgb(135, 135, 135), rgb(254, 254, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__description {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+
+    background: linear-gradient(135.00deg, rgb(135, 135, 135),rgb(254, 254, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.rating {
+  margin-top: 16px;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #000;
+  &__rate {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+  }
+  &__stars {
+    display: flex;
+    column-gap: 4px;
+  }
+  &__star {
+    background: url('../../images/icons/star-yellow.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 18px;
+    height: 17px;
+  }
+  &__score {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__reviews {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    column-gap: 9px;
+    align-items: center;
+
+    & p {
+      line-height: 24px;
+    }
+  }
+  &__reviews-btn {
+    height: 19.5px;
+    width: 19.5px;
+    background: url('../../images/icons/arrow-bottom.png') no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+}
