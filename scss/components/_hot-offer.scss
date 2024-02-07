@@ -22,7 +22,7 @@
     margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
-    background: linear-gradient(135.00deg, rgb(135, 135, 135),rgb(254, 254, 254));
+    background: linear-gradient(135deg, rgb(135, 135, 135), rgb(254, 254, 254));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -45,14 +45,82 @@
     font-weight: 500;
 
     &::before {
-      content: '';
+      content: "";
       width: 68px;
       height: 10px;
       position: absolute;
       left: 4px;
       top: 16px;
-      background: url('../../images/icons/strikethrough.png') no-repeat;
+      background: url("../../images/icons/strikethrough.png") no-repeat;
       background-size: contain;
+    }
+  }
+  &__product-image {
+    margin-top: 51px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  &__additional-info-wrapper {
+    margin-top: 39px;
+    display: flex;
+    column-gap: 4px;
+    justify-content: center;
+  }
+  &__additional-info {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgb(213, 213, 213);
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  &__express-shipping {
+    width: 75px;
+    height: 28px;
+  }
+  &__review-stars {
+    display: flex;
+    column-gap: 1px;
+  }
+  &__review-star {
+    padding: 2.1px;
+    height: 14px;
+    width: 14px;
+    object-position: 50% 50%;
+    background-color: $green-color;
+  }
+
+  &__rate {
+    font-size: 12px;
+    // line-height: 20px;
+    font-weight: 600;
+    &_big-bold {
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &_bold {
+      font-weight: 700;
+    }
+  }
+
+}
+
+.trustpilot {
+  &__description {
+    margin-top: 3px;
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 500;
+    &_bold {
+      font-weight: 700;
+    }
+    & img {
+      width: 44px;
+      height: 12px;
     }
   }
 }
@@ -76,7 +144,7 @@
     column-gap: 4px;
   }
   &__star {
-    background: url('../../images/icons/star-yellow.png') no-repeat;
+    background: url("../../images/icons/star-yellow.png") no-repeat;
     background-size: cover;
     background-position: center center;
     width: 18px;
@@ -102,9 +170,8 @@
   &__reviews-btn {
     height: 19.5px;
     width: 19.5px;
-    background: url('../../images/icons/arrow-bottom.png') no-repeat;
+    background: url("../../images/icons/arrow-bottom.png") no-repeat;
     background-size: contain;
     cursor: pointer;
   }
-
 }

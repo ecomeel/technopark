@@ -156,6 +156,69 @@ html, body {
   background: url("../../images/icons/strikethrough.png") no-repeat;
   background-size: contain;
 }
+.hot-offer__product-image {
+  margin-top: 51px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+.hot-offer__additional-info-wrapper {
+  margin-top: 39px;
+  display: flex;
+  column-gap: 4px;
+  justify-content: center;
+}
+.hot-offer__additional-info {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgb(213, 213, 213);
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+.hot-offer__express-shipping {
+  width: 75px;
+  height: 28px;
+}
+.hot-offer__review-stars {
+  display: flex;
+  column-gap: 1px;
+}
+.hot-offer__review-star {
+  padding: 2.1px;
+  height: 14px;
+  width: 14px;
+  object-position: 50% 50%;
+  background-color: #00B67A;
+}
+.hot-offer__rate {
+  font-size: 12px;
+  font-weight: 600;
+}
+.hot-offer__rate_big-bold {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hot-offer__rate_bold {
+  font-weight: 700;
+}
+
+.trustpilot__description {
+  margin-top: 3px;
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 500;
+}
+.trustpilot__description_bold {
+  font-weight: 700;
+}
+.trustpilot__description img {
+  width: 44px;
+  height: 12px;
+}
 
 .rating {
   margin-top: 16px;
