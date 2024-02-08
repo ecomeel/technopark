@@ -114,6 +114,10 @@ button:hover {
 }
 .header__open-nav-btn {
   cursor: pointer;
+  transition: opacity linear 0.3s;
+}
+.header__open-nav-btn:hover {
+  opacity: 0.5;
 }
 
 .notice__wrapper {
@@ -321,6 +325,10 @@ button:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
+  transition: opacity linear 0.2s;
+}
+.rating:hover {
+  opacity: 0.7;
 }
 .rating__rate {
   padding-top: 4px;

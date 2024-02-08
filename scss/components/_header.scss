@@ -11,6 +11,11 @@
 
   &__open-nav-btn {
     cursor: pointer;
+    transition: opacity linear .3s;
+
+    &:hover {
+      opacity: .5
+    }
   }
 }
 

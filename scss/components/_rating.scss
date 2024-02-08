@@ -6,6 +6,11 @@
   background-color: #fff;
   color: #000;
   cursor: pointer;
+  transition: opacity linear .2s;
+
+  &:hover {
+    opacity: .7;
+  }
   &__rate {
     padding-top: 4px;
     padding-bottom: 4px;
