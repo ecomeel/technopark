@@ -10,6 +10,15 @@
     font-size: 32px;
     text-align: left;
   }
+  &__items-left {
+    margin-top: 20px;
+  }
+  &__description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
 
 .slider {

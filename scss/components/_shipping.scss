@@ -1,0 +1,46 @@
+.shipping {
+  margin-top: 36px;
+  &__container {
+    padding: 0 24px;
+  }
+  &__title {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 5px;
+      background: url('../../images/icons/arrow-dropdown.png');
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+  &__content {
+    display: none;
+  }
+  &__delivers {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    & > * {
+      display: block;
+      max-height: 23px;
+    }
+  }
+  &__description {
+    margin-top: 8px;
+    color: #6B6B6B;
+    line-height: 22px;
+    text-align: left;
+  }
+}

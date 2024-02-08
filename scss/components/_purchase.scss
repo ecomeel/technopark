@@ -1,0 +1,81 @@
+.purchase {
+  &__container {
+    padding: 0 24px;
+  }
+  &__sale-timer {
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(245, 245, 246);
+    text-align: center;
+    line-height: 24px;
+    border-radius: 1000px;
+
+    & span {
+      color: $violet-color;
+      font-weight: 600;
+    }
+  }
+  &__new-cost {
+    margin-top: 12px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  &__old-cost {
+    display: flex;
+    column-gap: 4px;
+    & > :first-child {
+      position: relative;
+      line-height: 24px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 37%;
+        left: 0;
+        width: 50px;
+        height: 7px;
+        background: url('../../images/icons/strikethrough.png') no-repeat;
+        background-size: cover;
+      }
+    }
+    & > :last-child {
+      line-height: 24px;
+      color: rgb(255, 64, 83)
+    }
+  }
+  &__title {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+
+    & > * {
+      text-align: center;
+    }
+  }
+  &__buy-btn {
+    margin-top: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    background-color: $light-blue;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__delivery {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(113, 114, 113)
+  }
+}

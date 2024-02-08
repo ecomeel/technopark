@@ -72,7 +72,7 @@
     border-radius: 4px;
     background: rgb(213, 213, 213);
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   &__express-shipping {
     width: 75px;
@@ -92,7 +92,7 @@
 
   &__rate {
     font-size: 12px;
-    // line-height: 20px;
+    line-height: 20px;
     font-weight: 600;
     &_big-bold {
       line-height: 20px;
@@ -103,7 +103,6 @@
       font-weight: 700;
     }
   }
-
 }
 
 .trustpilot {

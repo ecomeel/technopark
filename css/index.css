@@ -192,6 +192,7 @@ html, body {
 }
 .hot-offer__rate {
   font-size: 12px;
+  line-height: 20px;
   font-weight: 600;
 }
 .hot-offer__rate_big-bold {
@@ -280,6 +281,15 @@ html, body {
   font-size: 32px;
   text-align: left;
 }
+.item-card__items-left {
+  margin-top: 20px;
+}
+.item-card__description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
 
 .slider__wrapper {
   margin-bottom: 20px;
@@ -290,4 +300,125 @@ html, body {
   width: 345px;
   text-align: center;
   max-width: 100%;
+}
+
+.purchase__container {
+  padding: 0 24px;
+}
+.purchase__sale-timer {
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(245, 245, 246);
+  text-align: center;
+  line-height: 24px;
+  border-radius: 1000px;
+}
+.purchase__sale-timer span {
+  color: #B15FFF;
+  font-weight: 600;
+}
+.purchase__new-cost {
+  margin-top: 12px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.purchase__old-cost {
+  display: flex;
+  column-gap: 4px;
+}
+.purchase__old-cost > :first-child {
+  position: relative;
+  line-height: 24px;
+}
+.purchase__old-cost > :first-child:before {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 50px;
+  height: 7px;
+  background: url("../../images/icons/strikethrough.png") no-repeat;
+  background-size: cover;
+}
+.purchase__old-cost > :last-child {
+  line-height: 24px;
+  color: rgb(255, 64, 83);
+}
+.purchase__title {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+.purchase__title > * {
+  text-align: center;
+}
+.purchase__buy-btn {
+  margin-top: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  background-color: #B0FDE4;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.purchase__buy-btn:hover {
+  opacity: 0.7;
+}
+.purchase__delivery {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(113, 114, 113);
+}
+
+.shipping {
+  margin-top: 36px;
+}
+.shipping__container {
+  padding: 0 24px;
+}
+.shipping__title {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.shipping__title::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  background: url("../../images/icons/arrow-dropdown.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.shipping__content {
+  display: none;
+}
+.shipping__delivers {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.shipping__delivers > * {
+  display: block;
+  max-height: 23px;
+}
+.shipping__description {
+  margin-top: 8px;
+  color: #6B6B6B;
+  line-height: 22px;
+  text-align: left;
 }/*# sourceMappingURL=index.css.map */
