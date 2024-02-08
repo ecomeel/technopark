@@ -4,6 +4,15 @@ new Swiper(".slider", {
   },
 });
 
+// Shipping dropDown
+const shippingDrowDownBtnNode = document.getElementById('shippingDropDownBtn');
+const shippingContentNode = document.getElementById('shippingContent');
+function handleOpenShippingContent() {
+  shippingContentNode.classList.toggle('hide-block')
+  shippingDrowDownBtnNode.classList.toggle('rotate')
+}
+shippingDrowDownBtnNode.addEventListener('click', handleOpenShippingContent)
+
 // Footer dropDown
 const footerShortBodyNode = document.getElementById("footerShortBody");
 const footerFullBodyNode = document.getElementById("footerFullBody");

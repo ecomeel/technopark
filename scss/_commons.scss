@@ -9,3 +9,13 @@
 .hide-block {
   display: none !important;
 }
+.rotate {
+  transform: rotate(180deg);
+}
+
+button {
+  transition: opacity ease .5s;
+  &:hover {
+    opacity: .3;
+  }
+}

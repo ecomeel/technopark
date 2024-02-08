@@ -81,6 +81,17 @@ html, body {
   display: none !important;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
+button {
+  transition: opacity ease 0.5s;
+}
+button:hover {
+  opacity: 0.3;
+}
+
 .header {
   background-color: #000;
 }
@@ -394,24 +405,22 @@ html, body {
 }
 .shipping__title {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
 }
-.shipping__title::after {
-  content: "";
-  position: absolute;
-  right: -20px;
-  top: 5px;
-  background: url("../../images/icons/arrow-dropdown.png");
-  background-size: cover;
+.shipping__dropdown-btn {
   width: 20px;
   height: 20px;
-  cursor: pointer;
-}
-.shipping__content {
-  display: none;
+  border: none;
+  background-color: transparent;
+  background: url("../../images/icons/arrow-dropdown.png");
+  background-size: cover;
+  background-position: center center;
+  transition: transform ease 0.5s;
 }
 .shipping__delivers {
   margin-top: 12px;
