@@ -9,13 +9,20 @@
 .hide-block {
   display: none !important;
 }
+.show-popup {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
 .rotate {
   transform: rotate(180deg);
+}
+.body-scroll-fixed {
+  overflow: hidden;
 }
 
 button {
   transition: opacity ease .5s;
   &:hover {
-    opacity: .3;
+    opacity: .5;
   }
 }
