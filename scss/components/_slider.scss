@@ -1,0 +1,12 @@
+.slider {
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+  &__image {
+    margin: 0 auto;
+    display: block;
+    width: 345px;
+    text-align: center;
+    max-width: 100%;
+  }
+}

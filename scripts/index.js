@@ -1,20 +1,25 @@
+// Slider
 new Swiper(".slider", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
 });
 
+// Commons functions
+function handlerChangeVisibilityPopup(node) {
+  document.body.classList.toggle("body-scroll-fixed");
+  node.classList.toggle("show-popup");
+}
+
 // Burger
 const openBurgerBtnNode = document.getElementById("openBurgerBtn");
 const closeBurgerBtnNode = document.getElementById("closeBurgerBtn");
 const burgerPopupNode = document.getElementById("burgerPopup");
-function handlerOpenPopup() {
-  document.body.classList.toggle("body-scroll-fixed");
-  burgerPopupNode.classList.toggle("show-popup");
-}
-openBurgerBtnNode.addEventListener("click", handlerOpenPopup);
+openBurgerBtnNode.addEventListener("click", () =>
+  handlerChangeVisibilityPopup(burgerPopupNode)
+);
 closeBurgerBtnNode.addEventListener("click", () =>
-  handlerClosePopup(burgerPopupNode)
+  handlerChangeVisibilityPopup(burgerPopupNode)
 );
 
 // Items left
@@ -29,13 +34,16 @@ itemsRangeLeftNode.style.width = `${percentAmount}%`;
 // Sale timer
 let time = 12345;
 const saleTimerNode = document.getElementById("saleTimer");
+function additionalZero(number) {
+  return number < 10 ? `0${number}` : number;
+}
 function updateTimer() {
   let hours = Math.floor(time / 3600);
-  hours = hours < 10 ? `0${hours}` : hours;
+  hours = additionalZero(hours);
   let minutes = Math.floor(time / 60) - hours * 60;
-  minutes = minutes < 10 ? `0${minutes}` : minutes;
+  minutes = additionalZero(minutes);
   let seconds = time % 60;
-  seconds = seconds < 10 ? `0${seconds}` : seconds;
+  seconds = additionalZero(seconds);
   saleTimerNode.innerText = `${hours}:${minutes}:${seconds}`;
   time--;
 }
@@ -46,22 +54,16 @@ const orderPopupNode = document.getElementById("orderPopup");
 const openOrderPopupBtnNode = document.getElementById("openOrderPopupBtn");
 const closeOrderPopupBtnNode = document.getElementById("closeOrderPopupBtn");
 const confirmOrderBtnNode = document.getElementById("confirmOrderBtn");
-function handlerClosePopup(node) {
-  node.classList.remove("show-popup");
-  document.body.classList.remove("body-scroll-fixed");
-}
-function handleOpenOrderPopup() {
-  orderPopupNode.classList.add("show-popup");
-  document.body.classList.add("body-scroll-fixed");
-}
 closeOrderPopupBtnNode.addEventListener("click", () =>
-  handlerClosePopup(orderPopupNode)
+  handlerChangeVisibilityPopup(orderPopupNode)
 );
 confirmOrderBtnNode.addEventListener("click", () => {
   alert("You confirmed your order!");
-  handlerClosePopup(orderPopupNode);
+  handlerChangeVisibilityPopup(orderPopupNode);
 });
-openOrderPopupBtnNode.addEventListener("click", handleOpenOrderPopup);
+openOrderPopupBtnNode.addEventListener("click", () => {
+  handlerChangeVisibilityPopup(orderPopupNode);
+});
 
 // Shipping dropDown
 const shippingDrowDownBtnNode = document.getElementById("shippingDropDownBtn");

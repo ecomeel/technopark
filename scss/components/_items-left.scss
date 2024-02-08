@@ -1,0 +1,20 @@
+.items-left {
+  &__amount {
+    margin-bottom: 8px;
+    color: $pink-color;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  &__range-wrapper  {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(235, 234, 232);
+    border-radius: 90px;
+  }
+  &__range {
+    height: 8px;
+    background-color: $pink-color;
+    border-radius: 90px;
+  }
+}
