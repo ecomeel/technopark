@@ -1,0 +1,26 @@
+.item-card {
+  &__container {
+    padding: 24px 24px 0 24px;
+  }
+  &__title {
+    margin-top: 12px;
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 32px;
+    text-align: left;
+  }
+}
+
+.slider {
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+  &__image {
+    margin: 0 auto;
+    display: block;
+    width: 345px;
+    text-align: center;
+    max-width: 100%;
+  }
+}

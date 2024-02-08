@@ -267,4 +267,27 @@ html, body {
   background: url("../../images/icons/arrow-bottom.png") no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+.item-card__container {
+  padding: 24px 24px 0 24px;
+}
+.item-card__title {
+  margin-top: 12px;
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  line-height: 36px;
+  font-size: 32px;
+  text-align: left;
+}
+
+.slider__wrapper {
+  margin-bottom: 20px;
+}
+.slider__image {
+  margin: 0 auto;
+  display: block;
+  width: 345px;
+  text-align: center;
+  max-width: 100%;
 }/*# sourceMappingURL=index.css.map */
