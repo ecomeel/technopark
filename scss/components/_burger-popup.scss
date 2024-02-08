@@ -19,7 +19,7 @@
     padding: 8px;
     background-color: transparent;
     border: none;
-    background: url('../../images/icons/close-btn.png');
+    background: url('../images/icons/close-btn.png');
     background-size: cover;
   }
 }
@@ -46,7 +46,7 @@
         content: '';
         width: 12px;
         height: 12px;
-        background: url('../../images/icons/right-arrow.png') no-repeat;
+        background: url('../images/icons/right-arrow.png') no-repeat;
         background-size: contain;
         position: absolute;
         right: 0;

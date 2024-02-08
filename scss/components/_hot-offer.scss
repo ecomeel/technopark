@@ -51,7 +51,7 @@
       position: absolute;
       left: 4px;
       top: 16px;
-      background: url("../../images/icons/strikethrough.png") no-repeat;
+      background: url("../images/icons/strikethrough.png") no-repeat;
       background-size: contain;
     }
   }
@@ -73,6 +73,11 @@
     background: rgb(213, 213, 213);
     color: #000;
     font-family: "Montserrat", sans-serif;
+
+    &:first-of-type {
+      display: flex;
+      align-items: center;
+    }
   }
   &__express-shipping {
     width: 75px;
@@ -92,7 +97,6 @@
 
   &__rate {
     font-size: 12px;
-    line-height: 20px;
     font-weight: 600;
     &_big-bold {
       line-height: 20px;

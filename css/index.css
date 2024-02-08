@@ -152,7 +152,7 @@ button:hover {
   padding: 8px;
   background-color: transparent;
   border: none;
-  background: url("../../images/icons/close-btn.png");
+  background: url("../images/icons/close-btn.png");
   background-size: cover;
 }
 
@@ -180,7 +180,7 @@ button:hover {
   content: "";
   width: 12px;
   height: 12px;
-  background: url("../../images/icons/right-arrow.png") no-repeat;
+  background: url("../images/icons/right-arrow.png") no-repeat;
   background-size: contain;
   position: absolute;
   right: 0;
@@ -242,7 +242,7 @@ button:hover {
   position: absolute;
   left: 4px;
   top: 16px;
-  background: url("../../images/icons/strikethrough.png") no-repeat;
+  background: url("../images/icons/strikethrough.png") no-repeat;
   background-size: contain;
 }
 .hot-offer__product-image {
@@ -264,6 +264,10 @@ button:hover {
   color: #000;
   font-family: "Montserrat", sans-serif;
 }
+.hot-offer__additional-info:first-of-type {
+  display: flex;
+  align-items: center;
+}
 .hot-offer__express-shipping {
   width: 75px;
   height: 28px;
@@ -281,7 +285,6 @@ button:hover {
 }
 .hot-offer__rate {
   font-size: 12px;
-  line-height: 20px;
   font-weight: 600;
 }
 .hot-offer__rate_big-bold {
@@ -331,7 +334,7 @@ button:hover {
   column-gap: 4px;
 }
 .rating__star {
-  background: url("../../images/icons/star-yellow.png") no-repeat;
+  background: url("../images/icons/star-yellow.png") no-repeat;
   background-size: cover;
   background-position: center center;
   width: 18px;
@@ -355,7 +358,7 @@ button:hover {
 .rating__reviews-btn {
   height: 19.5px;
   width: 19.5px;
-  background: url("../../images/icons/arrow-bottom.png") no-repeat;
+  background: url("../images/icons/arrow-bottom.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -386,7 +389,7 @@ button:hover {
   color: #FF4053;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .items-left__range-wrapper {
   width: 100%;
@@ -440,7 +443,7 @@ button:hover {
 .order-popup__close-btn {
   border: none;
   background-color: transparent;
-  background: url("../../images/icons/close-btn.png");
+  background: url("../images/icons/close-btn.png");
   background-size: cover;
   width: 13px;
   height: 13px;
@@ -540,7 +543,7 @@ button:hover {
   left: 0;
   width: 50px;
   height: 7px;
-  background: url("../../images/icons/strikethrough.png") no-repeat;
+  background: url("../images/icons/strikethrough.png") no-repeat;
   background-size: cover;
 }
 .purchase__old-cost > :last-child {
@@ -599,7 +602,7 @@ button:hover {
   height: 20px;
   border: none;
   background-color: transparent;
-  background: url("../../images/icons/arrow-dropdown.png");
+  background: url("../images/icons/arrow-dropdown.png");
   background-size: cover;
   background-position: center center;
   transition: transform ease 0.5s;
