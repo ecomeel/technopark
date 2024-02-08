@@ -5,20 +5,30 @@ new Swiper(".slider", {
 });
 
 // Burger
+const openBurgerBtnNode = document.getElementById("openBurgerBtn");
+const closeBurgerBtnNode = document.getElementById("closeBurgerBtn");
+const burgerPopupNode = document.getElementById("burgerPopup");
+function handlerOpenPopup() {
+  document.body.classList.toggle("body-scroll-fixed");
+  burgerPopupNode.classList.toggle("show-popup");
+}
+openBurgerBtnNode.addEventListener("click", handlerOpenPopup);
+closeBurgerBtnNode.addEventListener("click", () =>
+  handlerClosePopup(burgerPopupNode)
+);
 
 // Items left
-const itemsAmountNode = document.getElementById('itemsAmount');
-const itemsRangeLeftNode = document.getElementById('itemsRangeLeft');
+const itemsAmountNode = document.getElementById("itemsAmount");
+const itemsRangeLeftNode = document.getElementById("itemsRangeLeft");
 const startAmount = 100;
 const leftAmount = 35;
-const percentAmount = leftAmount * 100 / startAmount
+const percentAmount = (leftAmount * 100) / startAmount;
 itemsAmountNode.innerText = `${leftAmount} items left`;
-itemsRangeLeftNode.style.width = `${percentAmount}%`
-
+itemsRangeLeftNode.style.width = `${percentAmount}%`;
 
 // Sale timer
 let time = 12345;
-const saleTimerNode = document.getElementById('saleTimer');
+const saleTimerNode = document.getElementById("saleTimer");
 function updateTimer() {
   let hours = Math.floor(time / 3600);
   hours = hours < 10 ? `0${hours}` : hours;
@@ -29,7 +39,7 @@ function updateTimer() {
   saleTimerNode.innerText = `${hours}:${minutes}:${seconds}`;
   time--;
 }
-setInterval(updateTimer, 1000)
+setInterval(updateTimer, 1000);
 
 // Order Popup
 const orderPopupNode = document.getElementById("orderPopup");
@@ -37,15 +47,15 @@ const openOrderPopupBtnNode = document.getElementById("openOrderPopupBtn");
 const closeOrderPopupBtnNode = document.getElementById("closeOrderPopupBtn");
 const confirmOrderBtnNode = document.getElementById("confirmOrderBtn");
 function handlerClosePopup(node) {
-  node.classList.remove('show-popup')
-  document.body.classList.remove('body-scroll-fixed')
+  node.classList.remove("show-popup");
+  document.body.classList.remove("body-scroll-fixed");
 }
 function handleOpenOrderPopup() {
   orderPopupNode.classList.add("show-popup");
   document.body.classList.add("body-scroll-fixed");
 }
 closeOrderPopupBtnNode.addEventListener("click", () =>
-handlerClosePopup(orderPopupNode)
+  handlerClosePopup(orderPopupNode)
 );
 confirmOrderBtnNode.addEventListener("click", () => {
   alert("You confirmed your order!");
