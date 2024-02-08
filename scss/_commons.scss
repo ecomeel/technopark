@@ -1,5 +1,11 @@
 .container {
   margin: 0 auto;
   max-width: 600px;
+}
 
+.show-block {
+  display: block !important;
+}
+.hide-block {
+  display: none !important;
 }
